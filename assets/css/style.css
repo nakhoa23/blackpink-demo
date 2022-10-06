@@ -37,6 +37,11 @@ html {
 
 /* Header */
 #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
     height: 48px;
     background-color: rgba(30, 24, 31, 50);
     text-align: center;
