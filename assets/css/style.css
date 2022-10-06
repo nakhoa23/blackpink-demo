@@ -1,0 +1,289 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Class chung */
+.text-heading {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 24px;
+    color: pink;
+    padding-top: 16px;
+    margin-bottom: 16px;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-12 {
+    margin-top: 12px !important;
+}
+
+.block {
+    display: block !important;
+}
+
+html {
+    background-color: rgba(30, 24, 31, 50) !important;
+    font-family: 'Inter Tight', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+#header {
+    height: 48px;
+    background-color: rgba(30, 24, 31, 50);
+    text-align: center;
+}
+
+
+#nav li {
+    position: relative;
+    
+}
+
+#nav > li {
+    display: inline-block;
+    
+}
+
+
+#nav > li > a {
+    padding: 0 24px;
+    /* khi hover vao the a = the li */
+    display: inline-block;
+    line-height: 48px;
+    padding: 0 32px;
+}
+
+#nav li a,
+#nav .subnav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: pink;
+    text-decoration: none;
+}
+
+#nav li a:hover,
+#nav .subnav a:hover {
+    background-color: rgba(222,177,224,100);
+    color: #000;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+}
+
+#nav .subnav a {
+    display: block;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0 15px rgba(30, 24, 31, 50);
+    text-align: left;
+    line-height: 40px;
+    padding: 0 16px;
+}
+
+/* Hien ra subnav khi hover vao members */
+#nav li:hover .subnav {
+    display: block;
+}
+
+.nav-icon {
+    padding: 5px;
+    font-size: 12px;
+}
+
+#slider img {
+    width: 100%;
+}
+
+/* Content */
+
+#content {
+    
+}
+
+/* Content About */
+
+#content .content-about .member-list {
+    width: 25%;
+    padding: 16px 24px;
+    margin-bottom: 36px;    
+    margin-left: 64px;
+    border-radius: 10%;
+}
+
+
+
+#content .content-about .content-about-text {
+    float: right;
+    margin-right: 350px;
+    font-size: 30px;
+    margin-top: 64px;
+    min-width: 600px;
+    line-height: 48px;
+    color: pink;
+}
+
+.content-social {
+    margin-left: 212px;
+}
+
+.content-social a {
+    font-size: 36px;
+    text-decoration: none;
+    color: pink;
+}
+
+.content-social .social-list {
+    padding: 8px;
+}
+
+#content .content-social .social-list:hover {
+    background-color: pink;
+    color: #000;
+    border-radius: 10px;
+}
+
+/* Content Ablbum */
+.content-album {
+    width: 100%;
+}
+
+.content-album-img {
+    width: 80%;
+    text-align: center;
+    border: 8px solid pink;
+    margin: 32px 10%;
+}
+
+.content-album-img .album-pic {
+    width: 25%;
+    padding: 12px;
+}
+
+/* Content Plink */
+.plink-section {
+    background-color: rgba(30, 24, 31, 50) !important;
+}
+
+.plink-sub-heading {
+    text-align: center;
+    color:rosybrown;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.plink-content {
+    margin-top: 32px;  
+}
+
+
+.plink-info {
+    color: pink;
+    font-size: 24px;
+    line-height: 32px;
+    float: left;
+    width: 40%;
+    margin-left: 13%; 
+}
+
+.plink-info i {
+    width: 30px;
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.plink-form {
+    width: 35%;
+    float: left;
+}
+
+
+.pl-form-content {
+    display: inline-block;
+    width: 49%;
+}
+
+.form-content {
+    width: 98%;
+    padding: 8px;
+}
+
+.plink-button {
+    background-color: pink;
+    float: right;
+    margin-right: 2%;
+    padding: 11px 16px;
+    color: #000;
+    border: none;
+    text-decoration: none;
+}
+
+.plink-button:hover {
+    background-color: #000;
+    color: pink;
+    cursor: pointer;   
+}
+
+#footer {
+    margin-top: 160px;
+    padding: 64px 16px;
+    text-align: center;
+    width: 100%;
+}
+
+#footer .social-list i {
+    color: pink;
+    font-size: 24px;
+    padding: 4px;
+}
+
+#footer .social-list i:hover {
+    background-color: pink;
+    color: #000;
+    border-radius: 10px;
+}
+
+#footer .copy-right,
+#footer .copy-right a {
+    color: pink;
+    font-size: 15px;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.arrow-down {
+    float: right;
+    font-size: 24px;
+    padding: 0 24px;
+}
+
+.back-home {
+    float: right;
+    padding: 24px;
+    font-size: 24px;
+}
+.back-home i,
+.arrow-down i {
+    color: pink;
+}
+
+.back-home a:hover,
+.arrow-down a:hover {
+    border-radius: 16px;
+    border: 4px solid pink;
+}
