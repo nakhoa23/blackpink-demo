@@ -32,7 +32,7 @@ html {
     font-family: 'Inter Tight', sans-serif;
     font-style: italic;
     font-weight: bold;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 /* Header */
@@ -108,7 +108,7 @@ html {
 
 .nav-icon {
     padding: 5px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 #slider img {
@@ -117,34 +117,41 @@ html {
 
 /* Content */
 
-#content {
-    
-}
-
 /* Content About */
 
-#content .content-about .member-list {
-    width: 25%;
-    padding: 16px 24px;
-    margin-bottom: 36px;    
-    margin-left: 64px;
-    border-radius: 10%;
+.memberlist {
+    display: inline-block;
+    width: 50%;
+    margin-left: 5%;
+    margin-bottom: 40px;
+    position: relative;
+    margin-top: 10px;
+}
+
+#content .memberlist img {
+    width: 50%;
 }
 
 
 
 #content .content-about .content-about-text {
-    float: right;
-    margin-right: 350px;
-    font-size: 30px;
-    margin-top: 64px;
-    min-width: 600px;
-    line-height: 48px;
+    position: absolute;
+    left: 45%;
+    margin: 68px 0;
+    display: inline-block;
+    width: 40%;
+    min-width: 50%;
+    text-align: left;
+}
+
+.about-text {
+    font-size: 36px;
+    line-height: 64px; 
     color: pink;
 }
 
 .content-social {
-    margin-left: 212px;
+    margin-left: 14.5%;
 }
 
 .content-social a {
@@ -179,6 +186,25 @@ html {
     width: 25%;
     padding: 12px;
 }
+
+/* Content MV */
+.content-mv {
+    width: 100%;
+    
+}
+.content-mv .h-mv {
+    text-align: center;
+    border: 8px solid pink;
+    margin: 32px 10%;
+    width: 80%;
+}
+
+.content-mv .mv {
+    width: 40%;
+    height: 315px;
+    padding: 24px;
+}
+
 
 /* Content Plink */
 .plink-section {
@@ -271,24 +297,27 @@ html {
     text-decoration: none;
 }
 
-.arrow-down {
-    float: right;
-    font-size: 24px;
-    padding: 0 24px;
-}
-
 .back-home {
+    position: fixed;
+    bottom: 0;
+    right: 0;
     float: right;
     padding: 24px;
     font-size: 24px;
+    margin-right: 8px;
 }
-.back-home i,
-.arrow-down i {
+.back-home i {
     color: pink;
 }
 
-.back-home a:hover,
-.arrow-down a:hover {
+.back-home a:hover {
     border-radius: 16px;
     border: 4px solid pink;
+}
+
+.more-about {
+    color: pink;
+    font-size: 24px;
+    margin-bottom: 36px;  
+    margin-top: 10px;  
 }
