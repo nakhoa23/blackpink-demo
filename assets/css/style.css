@@ -321,3 +321,231 @@ html {
     margin-bottom: 36px;  
     margin-top: 10px;  
 }
+
+/* Responsive */
+/* Mobie: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    .memberlist {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1em !important;
+    }
+    .memberlist img {
+        width: 11.546875em;
+    }
+    .content-social {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.5em !important;
+    }
+    .content-social a {
+        font-size: 1.5em;
+    }
+
+    .content-about-text .about-text {
+        display: none;
+    }
+    .text-heading {
+        font-size: 2em;
+        margin: 0.5em 0;
+        padding: 0;
+    }
+    .content-album-img {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1.5em;
+    }
+    .content-album-img .album-pic {
+        width: 45%;
+        padding: 0.2em;
+    }
+    .content-mv .h-mv {
+        width: 100%;
+        margin: 0;
+    }
+    .content-mv .mv {
+        width: 80%;
+        padding: 0;
+        margin-bottom: 0.5em;
+    }
+    .plink-info {
+        display:none;
+    }
+    .plink-form {
+        display: inline-block;
+        width: 100%;
+        padding: 0 0.5em;
+    }
+    .nav_pc {
+        display: none;
+    }
+    /* meo hieu cho nay sao phai them !important ma deoo them thi` no ko hien ra TT */
+    .nav-bars-btn {
+        display: block !important;
+    }
+
+}
+
+
+/* Mobie nav */
+
+.nav-bars-btn {
+    width: 3em;
+    height: 3em;
+    color: pink;
+    position: absolute;
+    top: 1em;
+    left: 0.5em;
+    display: none;
+}
+
+.nav_mobie {
+    position: fixed;
+    top: 46px;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+    width: 240px;
+    max-width: 100%;
+    opacity: 0;
+    background-color: rgba(30, 24, 31, 10);
+    /* Day menu ra khoi man hinh ben trai */
+    transform: translateX(-100%);
+    /* animation tu trai qua phai khi hien ra*/
+    transition: transform linear 0.5s;
+}
+.nav-mobie-list a {
+    color: pink;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    line-height: 3.5em;
+    padding-left: 1.3em;
+    display: block;
+}
+
+.nav-mobie-list a:hover {
+    background-color: rgba(222,177,224,100);
+    color: #000;
+}
+
+.nav-mobie-close {
+    width: 1.5em;
+    height: 1.5em;
+    color: pink;
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+}
+
+.nav-mobie-close i {
+    padding: 0.5em;
+}
+
+.nav-mobie-close i:hover {
+    background-color: pink;
+    color: #000;
+    cursor: pointer;
+}
+
+.nav-input {
+    text-align: left;
+}
+
+
+/* co checked thi khi bam vao menu moi an overlay */
+.nav-input:checked ~ .nav-overlay {
+    display: block;
+}
+
+/* Hien ra cai menu khi click vao bieu tuong menu */
+.nav-input:checked ~ .nav_mobie {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+    /* toc do mo` man hinh = animation */
+    animation: fadeIn linear 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Tablet: width > 739px width < 1023 */
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    #content .content-about .content-about-text {
+        margin: 0;
+        margin-top: 1em;   
+    }
+    .about-text {
+        padding: 0.5em;
+        font-size: 1em;
+        line-height: 1.2em;
+        color: pink;
+    }
+    .content-social {
+        margin: 0;
+        margin-left: 6em;
+    }
+    .content-social a {
+        font-size: 1.5em;
+    }
+    .text-heading {
+        font-size: 2em;
+        margin: 0.5em 0;
+        padding: 0;
+    }
+    .content-album-img {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1.5em;
+    }
+    .content-album-img .album-pic {
+        width: 45%;
+        padding: 0.2em;
+    }
+    .content-mv .h-mv {
+        width: 100%;
+        margin: 0;
+    }
+    .content-mv .mv {
+        width: 80%;
+        padding: 0;
+        margin-bottom: 0.5em;
+    }
+    .plink-info {
+        display:none;
+    }
+    .plink-form {
+        display: inline-block;
+        width: 100%;
+        padding: 0 0.5em;
+    }
+}
+
+/* PC: width > 1024px */
+@media only screen and (min-width: 64em) {
+   
+}
